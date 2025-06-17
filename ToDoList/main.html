@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+ </head>
+ <style>
+  .Add{
+      padding: 5px;
+      background-color: yellowgreen;
+      border-radius: 3px;
+      color:yellow
+
+   }
+    body{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+
+    }
+    .container{
+        background-color: rgb(224, 224, 87);
+        height: 400px;
+        width: 400px;
+        margin-top: 200px;
+        border: 2px solid white;
+        border-radius: 25px;
+    }
+ </style>
+ <body>
+    <div class="container">
+    <h1>To Do List</h1>
+    <h2>Add Items</h2>
+    <div id="items"></div>
+
+    <input type="text" placeholder="Add an Item" id="itemInput">
+    <button onclick="addItem()" class="Add">Add Item</button>
+
+    </div>
+
+    <script src="index.js"></script>
+ </body>
+ </html>
